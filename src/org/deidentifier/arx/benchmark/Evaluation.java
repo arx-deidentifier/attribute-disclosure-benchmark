@@ -113,11 +113,11 @@ public class Evaluation {
         // Check state
         File file = new File(BenchmarkSetup.RESULTS_FILENAME);
         if (!file.exists()) {
-            throw new IllegalStateException("File " + BenchmarkSetup.RESULTS_FILENAME + " could no be found. Please execute Experiment.run() first.");
+            throw new IllegalStateException("File " + BenchmarkSetup.RESULTS_FILENAME + " could no be found. Please execute Experiment.main() first.");
         }  
 
         // Init
-        CSVFile csvFile = new CSVFile(new File(BenchmarkSetup.RESULTS_FILENAME));
+        CSVFile csvFile = new CSVFile(file);
         List<PlotGroup> groups = new ArrayList<PlotGroup>();
         List<Plot<?>> plots = new ArrayList<Plot<?>>();
         
