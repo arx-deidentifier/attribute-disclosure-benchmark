@@ -190,8 +190,8 @@ public class BenchmarkSetup {
     /**
      * Thresholds
      * @param model
-     * @param dataset TODO
-     * @param attribute TODO
+     * @param dataset
+     * @param attribute
      * @return
      */
     public static double[] getThresholds(BenchmarkPrivacyModel model, BenchmarkDataset dataset, String attribute) {
